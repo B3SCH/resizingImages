@@ -50,7 +50,7 @@ def saveImageToDirectory(image, directory):
 
     def writeFileName(fileName):
         splitName = fileName.split('/')
-        outfileName = 'POST_' + splitName[1]
+        outfileName = 'POST_' + splitName[-1]
         return outfileName
 
     if checkDir(directory) == False:
